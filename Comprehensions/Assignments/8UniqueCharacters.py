@@ -3,4 +3,6 @@
 """
 
 def getUniqueCharacters(word_list):
-    return {unique for unique in word_list}
+    return {u for unique in word_list for u in unique}
+
+print(getUniqueCharacters(["word", "unique", "word", "ram", "unique", "shyam"]))
